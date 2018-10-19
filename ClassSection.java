@@ -32,4 +32,11 @@ public class ClassSection {
         instructorID = 0;
     }
 
+    // Constructor with args
+    ClassSection(int c, String dC, int cN, String iM,
+                 String camp, String mDays, String mTimes,
+                 int capac, int enroll, int insID) {
+
+    }
+
 }
