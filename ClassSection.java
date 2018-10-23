@@ -4,6 +4,11 @@
 **  Lab 6
 */
 
+// To Do:
+//
+// Get updated pdf
+// Create and use getters and setters for constructor
+
 public class ClassSection {
 
     // Fields
@@ -37,6 +42,17 @@ public class ClassSection {
                  String camp, String mDays, String mTimes,
                  int capac, int enroll, int insID) {
 
+        // Assign fields with args
+        crn = c;
+        departmentCode = dC;
+        courseNumber = cN;
+        instructionalMode = iM;
+        campus = camp;
+        meetingDays = mDays;
+        meetingTimes = mTimes;
+        capacity = capac;
+        enrollment = enroll;
+        instructorID = insID;
     }
 
 }
