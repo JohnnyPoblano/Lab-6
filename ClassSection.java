@@ -23,6 +23,15 @@ public class ClassSection {
     private int enrollment;
     private int instructorID;
 
+    // String manipulation constants
+    final static int SUNDAY = 1;
+    final static int MONDAY = 2;
+    final static int TUESDAY = 3;
+    final static int WEDNESDAY = 4;
+    final static int THURSDAY = 5;
+    final static int FRIDAY = 6;
+    final static int SATURDAY = 7;
+
     // No-arg constructor
     ClassSection() {
         crn = 0;
