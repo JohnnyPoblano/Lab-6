@@ -23,7 +23,7 @@ public class Lab_6_Driver {
     final static int COURSE_NUM_TWO = 211;
     final static String INST_MODE_TWO = "Classroom";
     final static String CAMPUS_TWO = "West";
-    final static String MEETING_DAYS_TWO = "Wednesday";
+    final static String MEETING_DAYS_TWO = "35";
     final static String MEETING_TIMES_TWO = "5:45pm to 8:15pm";
     final static int CAPACITY_TWO = 31;
     final static int ENROLLMENT_TWO = 13;

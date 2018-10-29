@@ -4,11 +4,6 @@
 **  Lab 6
 */
 
-// To Do:
-//
-// Get updated pdf
-// Create and use getters and setters for constructor
-
 public class ClassSection {
 
     // Fields
@@ -24,13 +19,21 @@ public class ClassSection {
     private int instructorID;
 
     // String manipulation constants
-    final static int SUNDAY = 1;
-    final static int MONDAY = 2;
-    final static int TUESDAY = 3;
-    final static int WEDNESDAY = 4;
-    final static int THURSDAY = 5;
-    final static int FRIDAY = 6;
-    final static int SATURDAY = 7;
+    final static String SUNDAY = "1";
+    final static String MONDAY = "2";
+    final static String TUESDAY = "3";
+    final static String WEDNESDAY = "4";
+    final static String THURSDAY = "5";
+    final static String FRIDAY = "6";
+    final static String SATURDAY = "7";
+
+    final static String SUNDAY_STRING = "Sun";
+    final static String MONDAY_STRING = "M";
+    final static String TUESDAY_STRING = "T";
+    final static String WEDNESDAY_STRING = "W";
+    final static String THURSDAY_STRING = "Th";
+    final static String FRIDAY_STRING = "F";
+    final static String SATURDAY_STRING = "Sat";
 
     // No-arg constructor
     ClassSection() {
@@ -146,6 +149,44 @@ public class ClassSection {
         return instructorID;
     }
 
+    private String createWeekdayString(String weekdayNumber) {
+        String weekdayString = "";
+
+        if(weekdayNumber.contains(SUNDAY)) {
+            weekdayString += SUNDAY_STRING;
+        }
+
+        if(weekdayNumber.contains(TUESDAY)) {
+            weekdayString += TUESDAY_STRING;
+        }
+
+        if(weekdayNumber.contains(WEDNESDAY)) {
+            weekdayString += WEDNESDAY_STRING;
+        }
+
+        if(weekdayNumber.contains(THURSDAY)) {
+            weekdayString += THURSDAY_STRING;
+        }
+
+        if(weekdayNumber.contains(FRIDAY)) {
+            weekdayString += FRIDAY_STRING;
+        }
+
+        if(weekdayNumber.contains(SATURDAY)) {
+            weekdayString += SATURDAY_STRING;
+        }
+
+        if(weekdayNumber.contains(SUNDAY)) {
+            weekdayString += SUNDAY_STRING;
+        }
+
+        if(weekdayString.equals("")) {
+            weekdayString = "N/A";
+        }
+
+        return weekdayString;
+    }
+
     // To string displays all fields
     public String toString() {
         String str = "************************************\n" +
@@ -154,7 +195,7 @@ public class ClassSection {
                      "Course Number:           " + courseNumber + "\n" +
                      "Instructional Mode:      " + instructionalMode + "\n" +
                      "Campus:                  " + campus + "\n" +
-                     "Meeting Days:            " + meetingDays + "\n" +
+                     "Meeting Days:            " + createWeekdayString(meetingDays) + "\n" +
                      "Meeting Times:           " + meetingTimes + "\n" +
                      "Capacity:                " + capacity  + "\n" +
                      "Enrollment:              " + enrollment + "\n" +
